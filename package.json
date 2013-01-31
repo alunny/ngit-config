@@ -1,0 +1,20 @@
+{
+  "name": "ngit-config",
+  "version": "0.0.0",
+  "description": "read/write git config files",
+  "main": "git-config.js",
+  "scripts": {
+    "test": "nodeunit test"
+  },
+  "repository": "git://github.com/alunny/ngit-config",
+  "keywords": [
+    "git",
+    "config",
+    "gitconfig"
+  ],
+  "author": "alunny",
+  "license": "BSD",
+  "devDependencies": {
+    "nodeunit": "~0.7.4"
+  }
+}

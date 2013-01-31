@@ -1,0 +1,41 @@
+[github]
+	user = alunny
+	token = LOLOLOLOLOLOLOLOLOOOLOLOL
+[user]
+	name = alunny
+	email = alunny@blackberry.com
+[alias]
+	s = status -sb
+	d = diff
+	wd = diff --word-diff
+	a = add
+	cm = commit
+	ca = commit -a
+	co = checkout
+    # ignore this comment
+	rb = rebase
+	br = branch
+	ph = push
+	pl = pull
+	l = log --oneline --decorate
+	f = fetch
+	am = commit -a --amend
+	delete-remote = !sh -c \"git push \\$0 \\:\\$1\"
+	r = remote
+	rv = remote -v
+	aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
+	cbt = !sh -c \"git checkout -b \\$1 -t \\$0\\/\\$1\"
+	fbr = !sh -c \"git branch \\$0 origin/master\"
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	commit = auto
+	interactive = auto
+	ui = auto
+[core]
+	autocrlf = input
+    # this = a comment
+    ; so does this
+[push]
+	default = tracking
